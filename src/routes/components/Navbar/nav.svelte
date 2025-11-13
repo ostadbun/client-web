@@ -4,6 +4,7 @@
     import MoonIcon from "@lucide/svelte/icons/moon";
     import Github from "@lucide/svelte/icons/github";
     import { mode, toggleMode } from "mode-watcher";
+    import * as DropdownMenu from "$lib/components/ui/dropdown-menu/index.js";
 </script>
 
 <nav class="flex items-center w-11/12 mx-auto my-6 justify-between">
@@ -29,24 +30,46 @@
         </div>
     </a>
 
+    <script lang="ts">
+    </script>
+
     <div class="flex items-center gap-3">
+        <DropdownMenu.Root class="block md:hidden">
+            <DropdownMenu.Trigger class="block md:hidden"
+                >...</DropdownMenu.Trigger
+            >
+            <DropdownMenu.Content>
+                <DropdownMenu.Group>
+                    <DropdownMenu.Item class="block md:hidden">
+                        <a href="/universities"> دانشگاه‌ها </a>
+                    </DropdownMenu.Item>
+                    <DropdownMenu.Item class="block sm:hidden">
+                        <a href="/lessons"> دروس </a>
+                    </DropdownMenu.Item>
+                    <DropdownMenu.Item class="block sm:hidden">
+                        <a href="/professors"> اساتید </a></DropdownMenu.Item
+                    >
+                </DropdownMenu.Group>
+            </DropdownMenu.Content>
+        </DropdownMenu.Root>
+
         <a href="https://github.com/ostadbun">
             <Button variant="ghost"
                 ><Github class="h-[1.2rem] w-[1.2rem]" /></Button
             >
         </a>
 
-        <a href="/professors">
-            <Button variant="secondary" class="cursor-pointer">اساتید</Button>
-        </a>
-
-        <a href="/universities">
+        <a href="/universities" class="hidden md:block">
             <Button variant="secondary" class="cursor-pointer"
                 >دانشگاه‌ها</Button
             >
         </a>
-        <a href="/lessons">
+        <a href="/lessons" class="hidden sm:block">
             <Button variant="secondary" class="cursor-pointer">دروس</Button>
+        </a>
+
+        <a href="/professors" class="hidden sm:block">
+            <Button variant="secondary" class="cursor-pointer">اساتید</Button>
         </a>
 
         <a href="/login">

@@ -1,5 +1,5 @@
 <div class="flex justify-center my-12">
-    <h1 class="text-[4rem] font-extrabold">
+    <h1 class="text-[2rem] sm:text-[3rem]  md:text-[4rem] font-extrabold">
         با شفّافیت انتخاب کن
         <br />
         با دانــــش رشــــد کن
@@ -7,7 +7,7 @@
 </div>
 
 <div class="flex justify-center">
-    <h2 class=" w-5/12 leading-8 text-justify opacity-70">
+    <h2 class="w-7/12 sm:w-5/12 leading-8 text-justify opacity-70">
         این یک سیستم متن‌باز و رایگان است که فرآیند انتخاب واحد (انتخاب استاد)
         را برای دانشجویان تسهیل می‌کند. با جمع‌آوری لیست اساتید یک دانشگاه و
         دریافت آرای دانشجویان درباره ویژگی‌های تدریس، این سیستم به دانشجویان کمک

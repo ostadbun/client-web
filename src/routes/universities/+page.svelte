@@ -5,6 +5,9 @@
 </script>
 
 <div class="w-11/12  md:w-6/12 mx-auto mt-16">
+
+
+    <!-- TODO: alternative combobox to this -->
     <div class="mb-8 w-full flex items-center gap-2">
         <Input class="w-3/12" type="text" placeholder="جست و جو" />
 
